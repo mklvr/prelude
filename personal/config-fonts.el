@@ -1,2 +1,3 @@
 ;; Set the default font and size
-(set-default-font "Fira Mono-10")
+(when (string= (system-name) "carbon01.office.resultsgeneration.com")
+  (set-default-font "Fira Mono-10"))

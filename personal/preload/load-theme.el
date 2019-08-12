@@ -3,3 +3,6 @@
 
 (when (string= (system-name) "carbon01.office.resultsgeneration.com")
   (setq prelude-theme 'dracula))
+
+(when (string= (system-name) "forge")
+  (setq prelude-theme 'manoj-dark))
