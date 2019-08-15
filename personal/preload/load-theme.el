@@ -6,3 +6,6 @@
 
 (when (string= (system-name) "forge")
   (setq prelude-theme 'manoj-dark))
+
+(when (string= (system-name) "carbon-0")
+  (setq prelude-theme 'moe-light))

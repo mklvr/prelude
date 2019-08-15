@@ -4,3 +4,6 @@
 
 (when (string= (system-name) "forge")
   (set-default-font "Fira Code-10"))
+
+(when (string= (system-name) "carbon-0")
+  (set-default-font "Fira Code-10"))
