@@ -9,3 +9,6 @@
 
 (when (string= (system-name) "carbon-0")
   (setq prelude-theme 'moe-light))
+
+(when (string= (system-name) "kitchen")
+  (setq prelude-theme 'apropospriate-light))
