@@ -11,4 +11,4 @@
   (setq prelude-theme 'moe-light))
 
 (when (string= (system-name) "kitchen")
-  (setq prelude-theme 'apropospriate-light))
+  (setq prelude-theme 'manoj-dark))
