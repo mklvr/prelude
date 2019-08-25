@@ -12,3 +12,6 @@
 
 (when (string= (system-name) "kitchen")
   (setq prelude-theme 'manoj-dark))
+
+(when (string= (system-name) "sycamore")
+  (setq prelude-theme 'ubuntu))

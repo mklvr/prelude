@@ -3,6 +3,5 @@
                             dracula-theme
                             leuven-theme
                             moe-theme
-                            tao-theme))
-
-
+                            tao-theme
+                            ubuntu-theme))
