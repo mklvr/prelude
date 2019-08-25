@@ -1,5 +1,5 @@
 (require 'prelude-programming)
 
-(prelude-require-packages '(kubel))
+;; (prelude-require-packages '(kubel))
 
-(require 'kubel)
+;;(require 'kubel)
