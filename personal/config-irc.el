@@ -3,7 +3,7 @@
 (require 'prelude-erc)
 
 ;; Set default irc server list
-(setq my-fav-irc '("ulmus.dfw.mklvr.io"))
+(setq my-fav-irc '("ulmus.dfw.mklvr.io:7000"))
 
 ;; Hide some types of messages in erc
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))

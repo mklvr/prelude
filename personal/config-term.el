@@ -23,3 +23,9 @@
 
 (global-set-key (kbd "C-c '") 'get-term)
 (global-set-key (kbd "C-c \"") 'multi-term-dedicated-toggle)
+
+(add-hook 'term-mode-hook (lambda ()
+                            (define-key term-raw-map (kbd "C-c C-a") 'term-send-home)
+                            (define-key term-raw-map (kbd "C-c C-e") 'term-send-end)
+                            (define-key term-raw-map (kbd "M-<backspace>") 'term-send-backward-kill-word)
+                            ))
