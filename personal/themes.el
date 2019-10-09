@@ -7,9 +7,4 @@
                             flatland-black-theme
                             leuven-theme
                             moe-theme
-<<<<<<< HEAD
                             tao-theme))
-=======
-                            tao-theme
-                            ubuntu-theme))
->>>>>>> f10349e9f9dc391ae3452c2ced837faec3e756da
