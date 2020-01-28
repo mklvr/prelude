@@ -15,3 +15,6 @@
 
 (when (string= (system-name) "sycamore")
   (setq prelude-theme 'ubuntu))
+
+(when (string=  (system-name) "carbon-1")
+  (setq prelude-theme 'gruvbox-dark-medium))
