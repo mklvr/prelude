@@ -3,4 +3,5 @@
 
 (prelude-require-packages '(xclip))
 
-(xclip-mode 1)
+(ignore-errors
+  (xclip-mode 1))

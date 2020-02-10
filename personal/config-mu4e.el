@@ -1,4 +1,5 @@
-(when (string= (system-name) "carbon-0")
+;; If mu4e is installed, configure mail settings
+(when (file-exists-p "/usr/bin/mu")
   ;; make sure mu4e is in your load-path
   (require 'mu4e)
   (require 'smtpmail)
