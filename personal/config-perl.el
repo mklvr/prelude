@@ -14,4 +14,4 @@
 
 (add-hook 'before-save-hook 'perltidy-on-save)
 
-(add-to-list 'auto-mode-alist '("\\.t" . cperl-mode))
+(add-to-list 'auto-mode-alist '("\\.t$" . cperl-mode))

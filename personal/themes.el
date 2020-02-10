@@ -7,4 +7,5 @@
                             flatland-black-theme
                             leuven-theme
                             moe-theme
+                            gruvbox-theme
                             tao-theme))
