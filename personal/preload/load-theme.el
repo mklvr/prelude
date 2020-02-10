@@ -8,7 +8,7 @@
   (setq prelude-theme 'manoj-dark))
 
 (when (string= (system-name) "carbon-0")
-  (setq prelude-theme 'cyberpunk))
+  (setq prelude-theme 'zenburn))
 
 (when (string= (system-name) "kitchen")
   (setq prelude-theme 'manoj-dark))

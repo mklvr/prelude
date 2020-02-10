@@ -27,6 +27,6 @@
 ;; Use fastmail to send this stuff
 (setq message-send-mail-function 'smtpmail-send-it
      smtpmail-stream-type 'starttls
-     smtpmail-default-smtp-server "smtp.fastmail.com"
-     smtpmail-smtp-server "smtp.fastmail.com"
+     smtpmail-default-smtp-server "smtp.zoho.com"
+     smtpmail-smtp-server "smtp.zoho.com"
      smtpmail-smtp-service 587)
