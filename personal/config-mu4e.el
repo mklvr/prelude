@@ -4,8 +4,10 @@
   (require 'mu4e)
   (require 'smtpmail)
 
+  (global-set-key (kbd "C-c C-n m") 'mu4e)
   ;; use mu4e for e-mail in emacs
   (setq mail-user-agent 'mu4e-user-agent)
+  (setq mu4e-sent-messages-behavior 'delete)
 
   ;; Only needed if your maildir is _not_ ~/Maildir
   ;; Must be a real dir, not a symlink

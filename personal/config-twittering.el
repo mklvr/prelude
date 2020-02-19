@@ -3,5 +3,7 @@
 
 (prelude-require-packages '(twittering-mode))
 
+(global-set-key (kbd "C-c C-n w") 'twit)
+
 (setq twittering-use-master-password t)
-(setq twittering-icon-mode t)
+(setq twittering-icon-mode nil)

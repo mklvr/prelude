@@ -4,5 +4,6 @@
 (with-eval-after-load 'org
   (define-key org-mode-map (kbd "C-c C-r") verb-command-map))
 
-(global-set-key "\C-c\C-nt" 'traceroute)
-(global-set-key "\C-c\C-nd" 'dig)
+(global-set-key (kbd "C-c C-n t") 'traceroute)
+(global-set-key (kbd "C-c C-n d")  'dig)
+(global-set-key (kbd "C-c C-n n")  'netstat)
