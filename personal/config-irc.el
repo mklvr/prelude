@@ -1,6 +1,7 @@
 ;; config-irc.el --- Load erc modules and configure irc
 (require 'prelude-programming)
 (require 'prelude-erc)
+(prelude-require-packages '(erc-hl-nicks))
 
 ;; Set default irc server list
 (setq my-fav-irc '("ulmus.dfw.mklvr.io"))
@@ -12,3 +13,8 @@
 
 ;; Use .authinfo for irc credentials
 (setq erc-prompt-for-password nil)
+
+(and
+ (require 'erc-highlight-nicknames)
+ (add-to-list 'erc-modules 'highlight-nicknames)
+ (erc-update-modules))
