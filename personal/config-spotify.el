@@ -1,3 +1,4 @@
+;; Load and set hotkeys for spotify
 (require 'prelude-programming)
 
 (prelude-require-packages '(helm-spotify-plus))
