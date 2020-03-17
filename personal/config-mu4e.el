@@ -1,5 +1,5 @@
 ;; If mu4e is installed, configure mail settings
-(when (file-exists-p "/usr/bin/mu")
+(when (and enable-mu4e-on-this-host-p (file-exists-p ""/usr/bin/mu))
   ;; make sure mu4e is in your load-path
   (require 'mu4e)
   (require 'smtpmail)
