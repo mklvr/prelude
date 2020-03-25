@@ -14,7 +14,3 @@
 ;; Use .authinfo for irc credentials
 (setq erc-prompt-for-password nil)
 
-(and
- (require 'erc-highlight-nicknames)
- (add-to-list 'erc-modules 'highlight-nicknames)
- (erc-update-modules))
