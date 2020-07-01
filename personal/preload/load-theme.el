@@ -1,3 +1,5 @@
+(setq enable-mu4e-on-this-host-p nil)
+
 (when (string= system-name "saxifragum")
   (setq prelude-theme 'leuven))
 
