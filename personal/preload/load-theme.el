@@ -24,3 +24,6 @@
 
 (when (string=  (system-name) "carbon-1")
   (setq prelude-theme 'gruvbox-dark-medium))
+
+(when (string=  (system-name) "manzanita")
+  (setq prelude-theme 'wombat))
