@@ -10,3 +10,6 @@
 
 (when (string= (system-name) "kitchen")
   (set-default-font "Fira Code-10"))
+
+(when (string= (system-name) "sorbus.atx.mklvr.io")
+  (set-default-font "Fira Code-10"))
