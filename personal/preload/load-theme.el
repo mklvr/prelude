@@ -26,4 +26,7 @@
   (setq prelude-theme 'gruvbox-dark-medium))
 
 (when (string=  (system-name) "manzanita")
+  (setq prelude-theme 'dracula))
+
+(when (string=  (system-name) "sorbus")
   (setq prelude-theme 'wombat))
