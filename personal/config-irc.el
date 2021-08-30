@@ -4,7 +4,7 @@
 (prelude-require-packages '(erc-hl-nicks))
 
 ;; Set default irc server list
-(setq my-fav-irc '("ulmus.dfw.mklvr.io"))
+(setq my-fav-irc '("chilopsis.sjc.mklvr.io"))
 (setq erc-nick "mike")
 
 
@@ -13,4 +13,3 @@
 
 ;; Use .authinfo for irc credentials
 (setq erc-prompt-for-password nil)
-
