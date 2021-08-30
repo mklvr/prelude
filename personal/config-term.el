@@ -44,3 +44,9 @@
                             (define-key term-raw-map (kbd "C-c C-e") 'term-send-end)
                             (define-key term-raw-map (kbd "M-<backspace>") 'term-send-backward-kill-word)
                             ))
+
+(add-hook 'vterm-mode-hook (lambda ()
+                            (global-set-key (kbd "C-c C-a") 'term-send-home)
+                            (global-set-key (kbd "C-c C-e") 'term-send-end)
+                            (global-set-key (kbd "M-<backspace>") 'term-send-backward-kill-word)
+                            ))
