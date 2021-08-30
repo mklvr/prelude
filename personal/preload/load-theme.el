@@ -28,5 +28,5 @@
 (when (string=  (system-name) "manzanita")
   (setq prelude-theme 'dracula))
 
-(when (string=  (system-name) "sorbus")
-  (setq prelude-theme 'wombat))
+(when (string=  (system-name) "toolbox")
+  (setq prelude-theme 'tango))
