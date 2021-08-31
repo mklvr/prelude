@@ -46,7 +46,7 @@
                             ))
 
 (add-hook 'vterm-mode-hook (lambda ()
-                            (global-set-key (kbd "C-c C-a") 'term-send-home)
-                            (global-set-key (kbd "C-c C-e") 'term-send-end)
-                            (global-set-key (kbd "M-<backspace>") 'term-send-backward-kill-word)
+                            (local-set-key (kbd "C-c C-a") 'term-send-home)
+                            (local-set-key (kbd "C-c C-e") 'term-send-end)
+                            (local-set-key (kbd "M-<backspace>") 'term-send-backward-kill-word)
                             ))
