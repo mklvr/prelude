@@ -28,5 +28,5 @@
 (when (string=  (system-name) "manzanita")
   (setq prelude-theme 'dracula))
 
-(when (string=  (system-name) "toolbox")
-  (setq prelude-theme 'tango))
+(when (string=  (system-name) "olibanum.fat.mklvr.io")
+  (setq prelude-theme 'apropospriate-light))
