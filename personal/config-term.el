@@ -40,12 +40,16 @@
     (global-set-key (kbd "C-c \"") 'multi-term-dedicated-toggle)))
 
 (add-hook 'term-mode-hook (lambda ()
-                            (define-key term-raw-map (kbd "C-c C-a") 'term-send-home)
-                            (define-key term-raw-map (kbd "C-c C-e") 'term-send-end)
-                            (define-key term-raw-map (kbd "M-<backspace>") 'term-send-backward-kill-word)
+                            (define-key
+                              term-raw-map (kbd "C-c C-a") 'term-send-home)
+                            (define-key
+                              term-raw-map (kbd "C-c C-e") 'term-send-end)
+                            (define-key
+                              term-raw-map (kbd "M-<backspace>") 'term-send-backward-kill-word)
                             ))
 
 (add-hook 'vterm-mode-hook (lambda ()
+                            (display-line-numbers-mode -1)
                             (local-set-key (kbd "C-c C-a") 'term-send-home)
                             (local-set-key (kbd "C-c C-e") 'term-send-end)
                             (local-set-key (kbd "M-<backspace>") 'term-send-backward-kill-word)
