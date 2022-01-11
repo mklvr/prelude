@@ -30,3 +30,6 @@
 
 (when (string=  (system-name) "sassafras.fat.mklvr.io")
   (setq prelude-theme 'gruvbox-dark-medium))
+
+(when (string=  (system-name) "olibanum.fat.mklvr.io")
+  (setq prelude-theme 'apropospriate-light))
