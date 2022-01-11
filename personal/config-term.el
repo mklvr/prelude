@@ -48,5 +48,8 @@
 (add-hook 'vterm-mode-hook (lambda ()
                             (local-set-key (kbd "C-c C-a") 'term-send-home)
                             (local-set-key (kbd "C-c C-e") 'term-send-end)
-                            (local-set-key (kbd "M-<backspace>") 'term-send-backward-kill-word)
+                            (display-line-numbers-mode 0)
                             ))
+
+(define-key vterm-mode-map (kbd "<M-backspace>")
+  (lambda () (interactive) (vterm-send-key (kbd "C-w"))))
