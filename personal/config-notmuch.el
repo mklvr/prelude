@@ -16,4 +16,4 @@
   (lambda (&optional beg end)
     "toggle deleted tag for message"
     (interactive (notmuch-interactive-region))
-    (notmuch-search-tag (list "-inbox") beg end)))
+        (notmuch-search-tag (list "-inbox") beg end)))

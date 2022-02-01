@@ -28,6 +28,9 @@
 (when (string=  (system-name) "manzanita")
   (setq prelude-theme 'dracula))
 
+(when (string=  (system-name) "thymus")
+  (setq prelude-theme 'dracula))
+
 (when (string=  (system-name) "sassafras.fat.mklvr.io")
   (setq prelude-theme 'gruvbox-dark-medium))
 
