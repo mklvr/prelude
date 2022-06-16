@@ -36,3 +36,6 @@
 
 (when (string=  (system-name) "olibanum.fat.mklvr.io")
   (setq prelude-theme 'apropospriate-light))
+
+(when (string=  (system-name) "curcuma")
+  (setq prelude-theme 'gruvbox-dark-medium))
