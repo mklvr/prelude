@@ -12,6 +12,7 @@
    '(("ttrss+https://mike@ttrss.mklvr.io/tt-rss" :use-authinfo t)))
  '(elfeed-initial-tags '(unread))
  '(elfeed-search-filter "@6-months-ago +unread ")
+ '(erc-prompt-for-password nil)
  '(multi-vterm-dedicated-window-height 15)
  '(vterm-max-scrollback 10000))
 (custom-set-faces
