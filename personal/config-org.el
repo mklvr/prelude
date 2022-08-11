@@ -1,14 +1,13 @@
 (require 'prelude-programming)
 
-(prelude-require-packages '(org org-babel-eval-in-repl))
+(prelude-require-packages '(org org-babel-eval-in-repl org-roam))
 
 (require 'org)
 (require 'org-babel-eval-in-repl)
 
 (add-hook 'org-mode-hook #'toggle-truncate-lines)
 
-;; (org-babel-do-load-languages 'org-babel-load-languages
-;;     '(
-;;         (shell . t)
-;;     )
-;; )
+;; org-roam config
+(setq org-default-notes-file (concat org-directory "/misc.org"))
+(setq org-roam-directory (file-truename "~/org"))
+(org-roam-db-autosync-mode)
