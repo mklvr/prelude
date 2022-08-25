@@ -20,6 +20,7 @@
 (global-set-key (kbd "C-c 1 1") 'org-roam-buffer-toggle)
 (global-set-key (kbd "C-c 1 c") 'org-roam-capture)
 (global-set-key (kbd "C-c 1 j") 'org-roam-dailies-capture-today)
+(global-set-key (kbd "C-c 1 t") 'org-roam-dailies-find-today)
 
 (setq org-roam-capture-templates
       '(("d" "default" plain
