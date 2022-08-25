@@ -10,4 +10,24 @@
 ;; org-roam config
 (setq org-default-notes-file (concat org-directory "/misc.org"))
 (setq org-roam-directory (file-truename "~/org"))
+(setq org-road-db-location (file-truename "~/org/org-roam.db"))
+
 (org-roam-db-autosync-mode)
+
+(global-set-key (kbd "C-c 1 n") 'org-roam-node-find)
+(global-set-key (kbd "C-c 1 i") 'org-roam-node-insert)
+(global-set-key (kbd "C-c 1 v") 'org-roam-node-visit)
+(global-set-key (kbd "C-c 1 1") 'org-roam-buffer-toggle)
+(global-set-key (kbd "C-c 1 c") 'org-roam-capture)
+(global-set-key (kbd "C-c 1 j") 'org-roam-dailies-capture-today)
+
+(setq org-roam-capture-templates
+      '(("d" "default" plain
+         "%?"
+         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+         :unnarrowed t)
+        ("r" "recipe" plain
+         "* Ingredients\n - %?\n* Directions\n\n* Source \n\n"
+         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n" "#+filetags: \n")
+         :unnarrowed t)
+        ))
