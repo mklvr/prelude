@@ -28,7 +28,7 @@
          :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
          :unnarrowed t)
         ("r" "recipe" plain
-         "* Ingredients\n - %?\n* Directions\n\n* Source \n\n"
-         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n" "#+filetags: \n")
+         "* Ingredients\n  + %?\n\n* Directions\n\n* Source \n\n"
+         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :recipe:\n")
          :unnarrowed t)
         ))
