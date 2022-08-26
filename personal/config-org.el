@@ -31,4 +31,9 @@
          "* Ingredients\n  + %?\n\n* Directions\n\n* Source \n\n"
          :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :recipe:\n")
          :unnarrowed t)
+        ("n" "nutrition" plain
+         "* Nutrition\n| Food   | Protein | Carbs | Fats | Calories |\n|--------+---------+-------+------+----------|\n| %?       |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n|        |         |       |      |          |\n| Totals |       0 |     0 |    0 |        0 |\n#+TBLFM: @11$2=vsum(@2..@10)::@11$3=vsum(@2..@10)::@11$4=vsum(@2..@10)::@11$5=vsum(@2..@10)
+"
+         :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :nutrition:\n")
+         :unnarrowed t)
         ))
