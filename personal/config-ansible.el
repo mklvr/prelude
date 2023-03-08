@@ -1,6 +1,7 @@
 (require 'prelude-programming)
 
-(prelude-require-package 'ansible)
+(prelude-require-packages '(ansible ansible-doc))
+
 
 (require 's)
 
@@ -14,3 +15,5 @@
             (set (make-local-variable 'compile-command)
                  (concat "make exec args=\"" (file-name-nondirectory buffer-file-name) "\""))
             (set (make-local-variable 'compilation-window-height) (concat "18"))))
+
+(global-set-key (kbd "C-h a") 'ansible-doc)
