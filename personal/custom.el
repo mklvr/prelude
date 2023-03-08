@@ -14,6 +14,8 @@
  '(elfeed-search-filter "@6-months-ago +unread ")
  '(erc-prompt-for-password nil)
  '(multi-vterm-dedicated-window-height 15)
+ '(tramp-auto-save-directory "nil")
+ '(tramp-default-proxies-alist '((".*" "\\`root\\'" "/ssh:%h:")))
  '(vterm-max-scrollback 10000))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
