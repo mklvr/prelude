@@ -11,7 +11,6 @@ semanticdb
 url
 ede-projects.el
 .DS_Store
-custom.el
 places
 .smex-items
 savefile/
@@ -32,3 +31,7 @@ var/
 .lsp-session*
 gotools/
 eln-cache/
+personal/custom.el
+org-roam.db
+straight/
+async-bytecomp.log
