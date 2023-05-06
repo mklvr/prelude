@@ -16,7 +16,7 @@
   (setq prelude-theme 'gruvbox-dark-medium)
   (setq enable-mu4e-on-this-host-p nil))
 
-(when (string= (system-name) "manzanita.atx.mklvr.io")
+(when (string= (system-name) "manzanita.fat.mklvr.io")
   (setq prelude-theme 'dracula))
 
 (when (string= (system-name) "sycamore")

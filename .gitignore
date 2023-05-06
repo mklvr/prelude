@@ -29,3 +29,9 @@ transient/
 var/
 .cache/
 .lsp-session*
+gotools/
+eln-cache/
+personal/custom.el
+org-roam.db
+straight/
+async-bytecomp.log
