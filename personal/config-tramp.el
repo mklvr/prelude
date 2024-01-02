@@ -1,3 +1,3 @@
 (require 'prelude-programming)
 
-(prelude-require-packages '(docker-tramp helm-tramp tramp-term))
+(prelude-require-packages '(helm-tramp tramp-term))
