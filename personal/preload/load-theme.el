@@ -12,5 +12,8 @@
 (when (string=  (system-name) "acacia.fat.undermountain.net")
   (setq prelude-theme 'wombat))
 
-(when (string=  (system-name) "toolbox")
+(when (string=  (system-name) "olibanum.fat.mklvr.io")
+  (setq prelude-theme 'apropospriate-light))
+
+(when (string=  (system-name) "amsinckia.fat.undermountain.net")
   (setq prelude-theme 'wombat))
