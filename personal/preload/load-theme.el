@@ -13,4 +13,4 @@
   (setq prelude-theme 'wombat))
 
 (when (string=  (system-name) "toolbox")
-  (setq prelude-theme 'wombat))
+  (setq prelude-theme 'smyx))
