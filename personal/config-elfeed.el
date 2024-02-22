@@ -4,6 +4,5 @@
 (global-set-key "\C-c\C-ne" 'elfeed)
 
 (setq elfeed-use-curl nil)
-(setq elfeed-protocol-ttrss-maxsize 200) ;; bigger than 200 is invalid
 
-(elfeed-protocol-enable)
+(add-hook 'elfeed-show-mode-hook 'good-scroll-mode)
