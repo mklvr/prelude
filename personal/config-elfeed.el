@@ -6,3 +6,4 @@
 (setq elfeed-use-curl nil)
 
 (add-hook 'elfeed-show-mode-hook 'good-scroll-mode)
+(add-hook 'elfeed-show-mode-hook 'olivetti-mode)

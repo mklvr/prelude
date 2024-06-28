@@ -12,5 +12,8 @@
 (when (string=  (system-name) "acacia.fat.undermountain.net")
   (setq prelude-theme 'wombat))
 
+(when (string=  (system-name) "alba.fat.undermountain.net")
+  (setq prelude-theme 'gruvbox-light-medium))
+
 (when (string=  (system-name) "toolbox")
   (setq prelude-theme 'smyx))
