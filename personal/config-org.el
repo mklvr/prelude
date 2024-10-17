@@ -5,7 +5,7 @@
 (require 'org)
 (require 'org-babel-eval-in-repl)
 
-(add-hook 'org-mode-hook #'toggle-truncate-lines)
+;;(add-hook 'org-mode-hook #'toggle-truncate-lines)
 
 ;; org-roam config
 (setq org-default-notes-file (concat org-directory "/misc.org"))
@@ -37,3 +37,11 @@
          :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :nutrition:\n")
          :unnarrowed t)
         ))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)
+   (perl .t )))
+
+(add-hook 'org-mode-hook 'olivetti-mode)
+(add-hook 'org-mode-hook 'visual-line-mode)

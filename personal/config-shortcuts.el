@@ -29,3 +29,8 @@
   (call-interactively 'counsel-rg))
 
 (global-set-key (kbd "C-c C-g p") 'counsel-rg-projects)
+
+;; Use counsel, helm seems broken
+(global-set-key (kbd "C-c C-l r") 'counsel-rg)
+(global-set-key (kbd "C-c C-l a") 'counsel-ag)
+(global-set-key (kbd "C-c C-l g") 'counsel-grep)

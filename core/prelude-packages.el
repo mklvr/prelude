@@ -1,6 +1,6 @@
 ;;; prelude-packages.el --- Emacs Prelude: default package selection.
 ;;
-;; Copyright © 2011-2021 Bozhidar Batsov
+;; Copyright © 2011-2023 Bozhidar Batsov
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/prelude
@@ -53,6 +53,13 @@
 (setq package-user-dir (expand-file-name "elpa" prelude-dir))
 (package-initialize)
 
+;; install & enable use-package
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-verbose t)
+
 (defvar prelude-packages
   '(ace-window
     ag
@@ -70,6 +77,7 @@
     flycheck
     gist
     git-timemachine
+    git-modes
     guru-mode
     hl-todo
     imenu-anywhere
