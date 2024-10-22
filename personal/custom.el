@@ -17,6 +17,11 @@
  '(tramp-auto-save-directory "nil")
  '(tramp-default-proxies-alist '((".*" "\\`root\\'" "/ssh:%h:")))
  '(vterm-max-scrollback 10000)
+ '(warning-suppress-log-types
+   '(((copilot copilot-no-mode-indent))
+     (emacsql)
+     ((copilot copilot-no-mode-indent))
+     (emacsql)))
  '(warning-suppress-types '((comp))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
