@@ -17,3 +17,6 @@
 
 (when (string=  (system-name) "toolbox")
   (setq prelude-theme 'smyx))
+
+(when (string=  (system-name) "curcuma.fat.undermountain.net")
+  (setq prelude-theme 'gruvbox-dark-hard))
