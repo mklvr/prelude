@@ -19,6 +19,7 @@
  '(vterm-max-scrollback 10000)
  '(warning-suppress-log-types
    '(((copilot copilot-no-mode-indent))
+     ((copilot copilot-no-mode-indent))
      (emacsql)
      ((copilot copilot-no-mode-indent))
      (emacsql)))
