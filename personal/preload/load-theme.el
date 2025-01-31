@@ -1,3 +1,7 @@
+(setq extra-load-themes-dir "~/Projects/mklvr/replace-colorthemes")
+(if (file-exists-p extra-load-themes-dir)
+    (add-to-list 'custom-theme-load-path extra-load-themes-dir))
+
 (setq enable-mu4e-on-this-host-p nil)
 
 (when (string= (system-name) "manzanita.fat.mklvr.io")
@@ -19,7 +23,4 @@
   (setq prelude-theme 'smyx))
 
 (when (string=  (system-name) "curcuma.fat.undermountain.net")
-  (setq prelude-theme 'gruvbox-dark-hard))
-
-;;(when (string=  (system-name) "curcuma.fat.undermountain.net")
-;;  (setq prelude-theme 'modus-vivendi))
+  (setq prelude-theme 'sitaramv-solaris))
