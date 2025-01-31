@@ -13,6 +13,7 @@
 (add-hook 'python-mode-hook 'copilot-mode)
 (add-hook 'yaml-mode-hook 'copilot-mode)
 (add-hook 'cperl-mode-hook 'copilot-mode)
+(add-hook 'php-mode-hook 'copilot-mode)
 
 (add-to-list 'copilot-indentation-alist '(prog-mode 2))
 (add-to-list 'copilot-indentation-alist '(python-mode 4))

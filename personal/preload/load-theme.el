@@ -20,3 +20,6 @@
 
 (when (string=  (system-name) "curcuma.fat.undermountain.net")
   (setq prelude-theme 'gruvbox-dark-hard))
+
+;;(when (string=  (system-name) "curcuma.fat.undermountain.net")
+;;  (setq prelude-theme 'modus-vivendi))

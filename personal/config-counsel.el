@@ -12,7 +12,7 @@
 ;; Set a find file shortcut from projects directory
 (defun counsel-fd-projects ()
   (interactive)
-  (cd "~/")
+  (cd "~/Projects")
   (call-interactively 'counsel-fd-file-jump))
 
 (global-set-key (kbd "C-c C-l p") 'counsel-fd-projects)
@@ -20,7 +20,7 @@
 ;; Set a grep file shortcut from projects directory
 (defun counsel-rg-projects ()
   (interactive)
-  (cd "~/")
+  (cd "~/Projects")
   (call-interactively 'counsel-rg))
 
 (global-set-key (kbd "C-c C-g p") 'counsel-rg-projects)
